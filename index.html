@@ -453,7 +453,7 @@
       </div>
 
       <button type="submit" class="submit-btn" id="submit-btn">
-        Başvuruyu Gönder
+        Talebi Gönder
       </button>
 
     </form>
@@ -465,11 +465,11 @@
           <polyline points="20 6 9 17 4 12"/>
         </svg>
       </div>
-      <div class="success-title">Başvurunuz Alındı</div>
+      <div class="success-title">Talebiniz Alındı</div>
 
       <div class="success-summary" id="success-summary"></div>
 
-      <button class="reset-btn" id="reset-btn">Yeni başvuru yap</button>
+      <button class="reset-btn" id="reset-btn">Yeni talep oluştur</button>
     </div>
 
   </div>
@@ -581,7 +581,7 @@
 
     } catch (err) {
       btn.disabled = false;
-      btn.textContent = 'Başvuruyu Gönder';
+      btn.textContent = 'Talebi Gönder';
       alert('Gönderim sırasında bir hata oluştu. Lütfen tekrar deneyin.\n\nHata: ' + (err.text || err));
     }
   });
@@ -592,7 +592,7 @@
     document.getElementById('application-form').style.display = '';
     document.getElementById('success-panel').style.display = 'none';
     document.getElementById('submit-btn').disabled = false;
-    document.getElementById('submit-btn').textContent = 'Başvuruyu Gönder';
+    document.getElementById('submit-btn').textContent = 'Talebi Gönder';
   });
 </script>
 
